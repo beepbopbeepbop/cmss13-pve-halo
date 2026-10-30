@@ -182,3 +182,19 @@
 	icon = 'icons/halo/obj/items/cov_medical.dmi'
 	icon_state = "health_scanner"
 	alien = TRUE
+
+/obj/item/device/healthanalyzer/covenant/attack(mob/living/M, mob/living/user)
+	if(!popup_window)
+		last_scan = M.health_scan(user, FALSE, TRUE, popup_window, alien)
+	else
+		if (!last_health_display)
+			last_health_display = new(M)
+		else
+			last_health_display.target_mob = M
+		SStgui.close_user_uis(user, src)
+		last_scan = last_health_display.ui_data(user, DETAIL_LEVEL_BODYSCAN)
+		last_health_display.look_at(user, DETAIL_LEVEL_BODYSCAN, bypass_checks = FALSE, ignore_delay = FALSE, alien = alien, associated_equipment = src)
+	to_chat(user, SPAN_NOTICE("[user] has analyzed [M]'s vitals."))
+	playsound(src.loc, 'sound/items/healthanalyzer.ogg', 50)
+	src.add_fingerprint(user)
+	return

@@ -375,7 +375,7 @@
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 	fa_max_scatter = SCATTER_AMOUNT_TIER_5
 
-/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy
+/obj/item/weapon/gun/energy/plasma/heavy_repeater
 	name = "\improper heavy plasma repeater"
 	desc = null
 	icon_state = "heavy_repeater"
@@ -386,19 +386,24 @@
 	has_heat_overlay = FALSE
 	has_overheat_icon_state = TRUE
 	fire_sound = "gun_heavyplasmaburst"
+	firesound_volume = 30
+	attachable_allowed = list(/obj/item/attachable/repeater_stock/heavy)
 	start_automatic = TRUE
 	muzzleflash_iconstate = "muzzle_flash_blue"
 	muzzle_flash_color = COLOR_PLASMA_BLUE
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_repeater.dmi'
+	overheat_sound = 'sound/weapons/halo/repeater_overheat.ogg'
+	manual_vent_sound = 'sound/weapons/halo/repeater_overheat.ogg'
+	close_vent_sound = 'sound/weapons/halo/repeater_overheat_finish.ogg'
 
-/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/handle_starting_attachment()
+/obj/item/weapon/gun/energy/plasma/heavy_repeater/handle_starting_attachment()
 	..()
 	var/obj/item/attachable/repeater_stock/heavy/integrated = new(src)
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
 
-/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/get_examine_text(mob/living/carbon/human/user)
+/obj/item/weapon/gun/energy/plasma/heavy_repeater/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
 	var/list/origin = .
 	var/insert_line
@@ -410,7 +415,7 @@
 		insert_line = "A much larger variant of the Type-25 plasma rifle. Although not officially classified by ONI intelligence programs due to its uncommon usage in the Covenant military, this is not for lack of threat posed. Most compare it to being a LMG variant of the standard T-25 plasma rifle."
 	origin.Insert(2, insert_line)
 
-/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/set_gun_config_values()
+/obj/item/weapon/gun/energy/plasma/heavy_repeater/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_SMG)
 	set_burst_delay(FIRE_DELAY_TIER_12)
@@ -450,6 +455,9 @@
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
+
+/obj/item/weapon/gun/smg/covenant_needler/unloaded
+	current_mag = null
 
 /obj/item/weapon/gun/smg/covenant_needler/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
@@ -588,6 +596,9 @@
 /obj/item/weapon/gun/rifle/covenant_carbine/unload_chamber(mob/user)
 	return
 
+/obj/item/weapon/gun/rifle/covenant_carbine/unloaded
+	current_mag = null
+
 /obj/item/weapon/gun/rifle/needle_rifle
 	name = "\improper needle rifle"
 	desc = null
@@ -692,3 +703,6 @@
 	current_mag = null
 
 	update_icon()
+
+/obj/item/weapon/gun/rifle/needle_rifle/unloaded
+	current_mag = null

@@ -27,9 +27,9 @@
 	flags_magazine = NO_FLAGS
 
 /obj/item/ammo_magazine/needle_rifle
-	name = "\improper carbine magazine"
-	desc = "Holds 18 rounds of radioactive mayhem."
-	caliber = "8x60mm"
+	name = "\improper needle rifle magazine"
+	desc = "Holds 12 rounds of needle mayhem."
+	caliber = "needle"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_magazines.dmi'
 	icon_state = "needlerifle_mag"
 	item_state = "needlerifle_mag"

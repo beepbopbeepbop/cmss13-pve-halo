@@ -11,7 +11,7 @@
 	var/list/required_species
 
 /obj/structure/machinery/cm_vending/covenant/attack_hand(mob/user)
-	if(ishuman(user))
+	if(ishuman(user) && required_species)
 		var/mob/living/carbon/human/human_user = user
 		if(!(human_user.species.name in required_species))
 			return

@@ -95,9 +95,6 @@
 	ruuhtian.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_RUUHTIAN))
 	return ..()
 
-/datum/species/ruuhtian/get_hairstyle(style)
-	return GLOB.ruuhtian_hair_styles_list[style]
-
 /datum/species/ruuhtian/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
 	name = SPECIES_RUUHTIAN_HEROIC
 	name_plural = "Ruuhtian Heroic"

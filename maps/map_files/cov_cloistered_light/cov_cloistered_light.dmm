@@ -289,6 +289,28 @@
 /obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant,
 /area/cloistered_light/unggoy_quarters)
+"aW" = (
+/obj/effect/landmark/species_start/unggoy,
+/turf/open/floor/covenant/smooth_plating,
+/area/cloistered_light/unggoy_quarters)
+"aX" = (
+/obj/effect/landmark/species_start/unggoy,
+/obj/structure/machinery/light/covenant/invisible,
+/turf/open/floor/covenant,
+/area/cloistered_light/unggoy_quarters)
+"aY" = (
+/obj/effect/landmark/species_start/unggoy,
+/turf/open/floor/covenant/paneling,
+/area/cloistered_light/unggoy_quarters)
+"aZ" = (
+/obj/effect/landmark/species_start/unggoy,
+/obj/structure/machinery/light/covenant/invisible,
+/turf/open/floor/covenant/smooth_plating,
+/area/cloistered_light/unggoy_quarters)
+"ba" = (
+/obj/effect/landmark/species_start/unggoy,
+/turf/open/floor/covenant,
+/area/cloistered_light/unggoy_quarters)
 "bb" = (
 /obj/effect/decal/covenant_trim/endcap_left{
 	dir = 1
@@ -577,6 +599,7 @@
 /obj/structure/bed/alien{
 	pixel_y = 34
 	},
+/obj/effect/landmark/start/marine/covenant/lance_standard,
 /turf/open/floor/covenant/endcap/east,
 /area/cloistered_light/kigyar_quarters)
 "cb" = (
@@ -822,6 +845,10 @@
 "cX" = (
 /turf/open/floor/covenant/endcap/south,
 /area/cloistered_light/hallways)
+"cY" = (
+/obj/effect/landmark/species_start/unggoy,
+/turf/open/floor/covenant/smooth_plating/sides/south,
+/area/cloistered_light/unggoy_quarters)
 "cZ" = (
 /obj/effect/decal/covenant_trim/endcap_left,
 /turf/open/floor/covenant/paneling,
@@ -1696,6 +1723,72 @@
 	},
 /turf/open/floor/covenant,
 /area/cloistered_light)
+"gk" = (
+/obj/effect/landmark/late_join/covenant,
+/turf/open/floor/covenant,
+/area/cloistered_light/hallways)
+"gl" = (
+/obj/structure/machinery/cm_vending/sorted/covenant/ammo,
+/turf/open/floor/covenant,
+/area/cloistered_light/armory)
+"gm" = (
+/obj/item/stool{
+	pixel_x = 7;
+	pixel_y = 19
+	},
+/obj/effect/landmark/start/marine/covenant/lance_standard,
+/turf/open/floor/covenant/smooth_plating/sides/southeast,
+/area/cloistered_light/kigyar_quarters)
+"gn" = (
+/obj/structure/bed/alien{
+	pixel_y = 18
+	},
+/obj/structure/bed/alien{
+	pixel_y = 34
+	},
+/obj/effect/landmark/start/marine/covenant/lance_specialist,
+/turf/open/floor/covenant/endcap/east,
+/area/cloistered_light/kigyar_quarters)
+"go" = (
+/obj/structure/bed/alien{
+	pixel_y = 18
+	},
+/obj/structure/bed/alien{
+	pixel_y = 34
+	},
+/obj/effect/landmark/start/marine/covenant/lance_ultra,
+/turf/open/floor/covenant/endcap/west,
+/area/cloistered_light/kigyar_quarters)
+"gp" = (
+/obj/item/stool{
+	pixel_x = -6;
+	pixel_y = 19
+	},
+/obj/effect/landmark/start/marine/covenant/lance_obedientary,
+/turf/open/floor/covenant/smooth_plating/sides/southwest,
+/area/cloistered_light/kigyar_quarters)
+"gq" = (
+/obj/structure/bed/alien{
+	pixel_y = 18
+	},
+/obj/structure/bed/alien{
+	pixel_y = 34
+	},
+/obj/effect/landmark/start/marine/covenant/lance_obedientary,
+/turf/open/floor/covenant/endcap/east,
+/area/cloistered_light/kigyar_quarters)
+"gr" = (
+/obj/effect/decal/covenant_trim/corner/seamless{
+	dir = 8
+	},
+/obj/effect/landmark/start/marine/covenant/lance_leader,
+/turf/open/floor/covenant/darker,
+/area/cloistered_light/sangheili_quarters)
+"gs" = (
+/obj/structure/bed/alien,
+/obj/effect/landmark/start/marine/covenant/lance_leader,
+/turf/open/floor/covenant/smooth_plating/blue/sides/north,
+/area/cloistered_light/sangheili_quarters)
 "ha" = (
 /turf/open/floor/covenant/smooth_plating/sides/north,
 /area/cloistered_light/kigyar_quarters)
@@ -2164,6 +2257,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
+/obj/effect/landmark/start/marine/covenant/lance_standard,
 /turf/open/floor/covenant/smooth_plating/sides/northeast,
 /area/cloistered_light/kigyar_quarters)
 "Hz" = (
@@ -2366,6 +2460,7 @@
 	pixel_x = -6;
 	pixel_y = 19
 	},
+/obj/effect/landmark/start/marine/covenant/lance_specialist,
 /turf/open/floor/covenant/smooth_plating/sides/southwest,
 /area/cloistered_light/kigyar_quarters)
 "So" = (
@@ -2437,6 +2532,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
+/obj/effect/landmark/start/marine/covenant/lance_standard,
 /turf/open/floor/covenant/smooth_plating/sides/northwest,
 /area/cloistered_light/kigyar_quarters)
 "WH" = (
@@ -2478,6 +2574,7 @@
 /obj/structure/bed/alien{
 	pixel_y = 34
 	},
+/obj/effect/landmark/start/marine/covenant/lance_standard,
 /turf/open/floor/covenant/endcap/west,
 /area/cloistered_light/kigyar_quarters)
 "XT" = (
@@ -3239,7 +3336,7 @@ iO
 vq
 AJ
 jK
-iO
+aW
 vq
 AJ
 jK
@@ -3388,12 +3485,12 @@ PR
 iO
 dT
 iO
-vq
+cY
 AJ
 jK
 iO
 vq
-AJ
+aY
 jK
 fz
 iO
@@ -3543,12 +3640,12 @@ dP
 fD
 AJ
 jK
-fz
+aZ
 vq
 AJ
 jK
 iO
-iO
+aW
 iO
 iO
 Om
@@ -3688,7 +3785,7 @@ rX
 rX
 rX
 Om
-iO
+aW
 iO
 dU
 iO
@@ -3842,7 +3939,7 @@ rX
 PR
 iO
 iO
-fz
+aZ
 iO
 fz
 PR
@@ -4303,7 +4400,7 @@ fn
 Om
 ME
 Vx
-Vx
+ba
 Vx
 Vx
 Vx
@@ -4459,7 +4556,7 @@ fB
 Vx
 fB
 Vx
-fB
+aX
 Vx
 aV
 cn
@@ -4601,12 +4698,12 @@ rX
 rX
 PR
 iO
-fz
+aZ
 iO
 jw
+aY
 AJ
-AJ
-Vx
+ba
 PR
 aJ
 eS
@@ -5210,7 +5307,7 @@ rX
 PR
 iO
 iO
-iO
+aW
 jw
 AJ
 AJ
@@ -5365,7 +5462,7 @@ fz
 iO
 jw
 dm
-AJ
+aY
 Vx
 PR
 Ex
@@ -5513,7 +5610,7 @@ rX
 rX
 PR
 PR
-iO
+aW
 iO
 hK
 Om
@@ -5801,11 +5898,11 @@ rX
 jX
 jX
 jX
-Ex
-Ex
-Ex
-Ex
-Ex
+gk
+gk
+gk
+gk
+gk
 jX
 jX
 jX
@@ -6065,7 +6162,7 @@ rX
 rX
 rX
 jv
-Ah
+gs
 yI
 jv
 dS
@@ -6372,7 +6469,7 @@ vK
 vK
 de
 fW
-eF
+gr
 eC
 vK
 vK
@@ -9870,7 +9967,7 @@ rX
 rX
 sU
 sU
-XN
+go
 GA
 er
 GA
@@ -10045,7 +10142,7 @@ rX
 rX
 sU
 lT
-Pm
+gm
 QR
 zb
 es
@@ -10326,7 +10423,7 @@ rX
 rX
 sU
 lT
-RB
+gp
 QR
 zb
 fk
@@ -10478,7 +10575,7 @@ rX
 rX
 sU
 sU
-ca
+gq
 GA
 er
 GA
@@ -10501,7 +10598,7 @@ rX
 rX
 sU
 sU
-ca
+gn
 GA
 er
 sU
@@ -18100,7 +18197,7 @@ ne
 WM
 rX
 nG
-CC
+gl
 CC
 CC
 CC
@@ -18252,7 +18349,7 @@ ne
 WM
 WM
 nG
-CC
+gl
 ga
 CC
 CC
@@ -21140,7 +21237,7 @@ ne
 WM
 nG
 nG
-CC
+gl
 ga
 CC
 bA
@@ -21292,7 +21389,7 @@ ne
 WM
 nG
 nG
-CC
+gl
 CC
 CC
 bA
