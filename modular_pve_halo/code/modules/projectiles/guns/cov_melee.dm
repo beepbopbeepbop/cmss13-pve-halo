@@ -62,6 +62,14 @@
 	w_class = SIZE_SMALL
 	hitsound = 'sound/weapons/slash.ogg'
 
+/obj/item/weapon/covenant/curveblade/training
+	name = "sangheili sparring curveblade"
+	desc = "A blunted curveblade, a traditional sangheili weapon."
+	force = MELEE_FORCE_TIER_2
+	throwforce = MELEE_FORCE_TIER_2
+	sharp = FALSE
+	edge = FALSE
+
 /obj/item/weapon/covenant/blamite_dagger
 	name = "pain-glass knife"
 	desc = "A disposable knife of Subanese crystal formed into a dense blade capable of slashing."
@@ -211,6 +219,12 @@
 			if(user.zone_selected == "chest" || user.zone_selected == "groin" )
 				return
 			targeted_limb.droplimb(FALSE, FALSE, "dismemberment")
+
+/obj/item/weapon/covenant/energy_sword/training
+	name = "Sparring Energy Sword"
+	activated_force = MELEE_FORCE_TIER_2
+	sharp = FALSE
+	edge = FALSE
 
 /obj/item/weapon/covenant/energy_sword/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
