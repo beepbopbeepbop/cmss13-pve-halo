@@ -18,9 +18,12 @@
 
 /obj/structure/machinery/light/covenant/invisible/brighter
 	light_range = 4
+	light_power = 1
 
 /obj/structure/machinery/light/covenant/invisible/brightest
 	light_range = 5
+	light_power = 2
 
 /obj/structure/machinery/light/covenant/invisible/hangar
 	light_range = 6
+	light_power = 3

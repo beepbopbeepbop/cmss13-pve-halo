@@ -242,6 +242,7 @@ GLOBAL_LIST_INIT(cm_vending_kigyar_evocati, list(
 		list("Plasma Pistol", 0, /obj/item/weapon/gun/energy/plasma/plasma_pistol, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
 		list("Needler", 5, /obj/item/weapon/gun/smg/covenant_needler/unloaded, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
 		list("Plasma Rifle", 10, /obj/item/weapon/gun/energy/plasma/plasma_rifle, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Carbine", 15, /obj/item/weapon/gun/rifle/covenant_carbine/unloaded, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
 
 		list("UTILITIES", 0, null, null, null),
 		list("Plasma Grenade", 5, /obj/item/explosive/grenade/high_explosive/plasma, null, VENDOR_ITEM_REGULAR),

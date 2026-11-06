@@ -58,6 +58,7 @@ GLOBAL_LIST_INIT(cm_vending_sangheili_minor, list(
 		list("Plasma Grenade", 5, /obj/item/explosive/grenade/high_explosive/plasma, null, VENDOR_ITEM_REGULAR),
 		list("Prybar", 0, /obj/item/tool/crowbar/tactical, null, VENDOR_ITEM_REGULAR),
 		list("Curveblade", 0, /obj/item/weapon/covenant/curveblade, MARINE_CAN_BUY_COMBAT_SHOES, VENDOR_ITEM_REGULAR),
+		list("Energy Sword", 15, /obj/item/weapon/covenant/energy_sword, MARINE_CAN_BUY_COMBAT_SHOES, VENDOR_ITEM_REGULAR),
 ))
 
 // ==== SANGHEILI LANCE LEADER (MAJOR) ====
@@ -117,6 +118,7 @@ GLOBAL_LIST_INIT(cm_vending_sangheili_major, list(
 		list("Plasma Grenade", 5, /obj/item/explosive/grenade/high_explosive/plasma, null, VENDOR_ITEM_REGULAR),
 		list("Prybar", 0, /obj/item/tool/crowbar/tactical, null, VENDOR_ITEM_REGULAR),
 		list("Curveblade", 0, /obj/item/weapon/covenant/curveblade, MARINE_CAN_BUY_COMBAT_SHOES, VENDOR_ITEM_REGULAR),
+		list("Energy Sword", 15, /obj/item/weapon/covenant/energy_sword, MARINE_CAN_BUY_COMBAT_SHOES, VENDOR_ITEM_REGULAR),
 ))
 
 // ==========================
