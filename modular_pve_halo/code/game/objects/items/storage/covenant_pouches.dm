@@ -180,8 +180,8 @@
 	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/blood_regen(src)
 
 /obj/item/clothing/accessory/storage/sheath/covenant
-	name = "large knife sheath"
-	desc = "A well-made leather sheath, looks big enough to hold a proper knife in it, or even a machete at a push."
+	name = "\improper Sangheili undersuit magnetic attachment point"
+	desc = "An advanced magnetic projector used to attach ancillary weapons, such as an energy sword, to a Sangheili warrior's undersuit."
 	icon = 'icons/obj/items/weapons/guns/attachments.dmi'
 	icon_state = "gyro"
 	high_visibility = null
